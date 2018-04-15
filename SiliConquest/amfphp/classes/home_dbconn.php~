@@ -1,0 +1,12 @@
+<?php
+//database server
+$DB_SERVER = "ww26.empiredatatech.com";
+
+//database login name
+$DB_USER = "jessed_lugumees";
+//database login password
+$DB_PASS = "jessed_eestimaa0";
+
+//database name
+$DB_DATABASE = "jessed_homepage";
+?>
