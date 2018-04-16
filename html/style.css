@@ -11,3 +11,44 @@ p {
     text-align: center;
     color: lime;
 }
+
+/* MainColumn keeps the content centered, with a reasonable max width. */
+.maincolumn {
+    width: 1024px;
+    margin: auto;
+}
+
+.maintab {
+    overflow: hidden;
+    background-color: inherit;
+}
+
+/* Style the buttons that are used to open the tab content */
+.maintab button {
+    background-color: #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+/* Change background color of buttons on hover */
+.maintab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.maintab button.active {
+    background-color: #ccc;
+}
+
+.maintabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
