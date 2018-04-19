@@ -76,3 +76,17 @@ p {
     padding: 6px 12px;
     border: 1px solid #ccc;
 }
+
+.maintabcontent p {
+    text-align: left;
+}
+
+.leftimage {
+    float: left;
+    margin-right: 12px;
+}
+
+.rightimage {
+    float: right;
+    margin-left: 12px;
+}
