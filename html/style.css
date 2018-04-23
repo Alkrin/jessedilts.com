@@ -14,8 +14,13 @@ p {
 
 /* MainColumn keeps the content centered, with a reasonable max width. */
 .maincolumn {
-    width: 1024px;
+    width: 824px;
     margin: auto;
+}
+
+.entry {
+    width: 100%;
+    display: inline-block;
 }
 
 .infoheader {
@@ -30,7 +35,7 @@ p {
 }
 
 .contactinfo {
-    width: 684px;
+    width: 484px;
     float: left;
 }
 
