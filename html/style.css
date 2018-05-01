@@ -12,6 +12,10 @@ p {
     color: lime;
 }
 
+li {
+    color: lime;
+}
+
 /* MainColumn keeps the content centered, with a reasonable max width. */
 .maincolumn {
     width: 824px;
@@ -24,13 +28,13 @@ p {
 }
 
 .infoheader {
-    height: 182px;
+    height: 202px;
 }
 
 .mugshot {
     width: 170px;
     height: 170px;
-    margin-top: 6px;
+    margin-top: 16px;
     float: left;
 }
 
@@ -42,7 +46,7 @@ p {
 .runes {
     width: 170px;
     height: 175px;
-    margin-top: 3.5px;
+    margin-top: 13.5px;
     float: left;
 }
 
@@ -94,4 +98,19 @@ p {
 .rightimage {
     float: right;
     margin-left: 12px;
+}
+
+.colorgrid {
+    width: 216px;
+}
+
+.colorgrid p {
+    border: 1px solid #333333;
+    padding-top: 4px;
+    width: 25px;
+    height: 21px;
+    text-align: center;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
