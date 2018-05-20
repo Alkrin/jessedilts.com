@@ -1,19 +1,35 @@
 body {
-    background-color: black;
+    font-family: Arial;
+    background-color: #000000;
 }
 
 h1 {
     text-align: center;
-    color: lime;
+    color: #d6ce15;
+    font-size: 32px;
 }
 
 p {
     text-align: center;
-    color: lime;
+    color: #53c00f;
+    font-size: 16px;
 }
 
 li {
-    color: lime;
+    color: #53c00f;
+    font-size: 16px;
+}
+
+a {
+    font-size: 16px;
+}
+
+a:link {
+    color: #22ccee;
+}
+
+a:visited {
+    color: #667788;
 }
 
 /* MainColumn keeps the content centered, with a reasonable max width. */
@@ -54,36 +70,52 @@ li {
     overflow: hidden;
     background-color: inherit;
     margin-top: 15px;
+    padding-left: 5px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .maintab button {
-    background-color: #f1f1f1;
     float: left;
-    border: none;
+    color: #d6ce15;
+    background-color: #181e04;
+    border: 1px solid #2f560a;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
     outline: none;
     cursor: pointer;
-    width: 100px;
+    width: 130px;
     height: 40px;
-    margin-left: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     transition: 0.3s;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* Change background color of buttons on hover */
 .maintab button:hover {
-    background-color: #ddd;
+    background-color: #2f560a;
 }
 
 /* Create an active/current tablink class */
 .maintab button.active {
-    background-color: #ccc;
+    width: 136px;
+    height: 43px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    background-color: #2f560a;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .maintabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding: 0px 12px 12px 12px;
+    border: 1px solid #2f560a;
+    border-radius: 6px;
+    background-color: #181e04
 }
 
 .maintabcontent p {
