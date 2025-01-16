@@ -1,0 +1,56 @@
+{
+  "name": "jessedilts.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass --output-style compressed -o dist src/scss",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
+    "build:images": "xcopy \"src/images\" \"dist/images\" /s /y /i",
+    "watch:images": "onchange \"src/images\" -- npm run build:images",
+    "build:downloads": "xcopy \"src/downloads\" \"dist/downloads\" /s /y /i",
+    "watch:downloads": "onchange \"src/downloads\" -- npm run build:downloads",
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "build": "npm run build:css & npm run build:js & npm run build:images & npm run build:html & npm run build:downloads",
+    "dev": "run-p serve watch:css watch:js watch:html watch:images watch:downloads"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alkrin/jessedilts.com.git"
+  },
+  "author": "Jesse Dilts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alkrin/jessedilts.com/issues"
+  },
+  "homepage": "https://github.com/Alkrin/jessedilts.com#readme",
+  "dependencies": {
+    "@babel/preset-react": "^7.26.3",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "node-sass": "^9.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^3.0.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "htmlnano": "^2.1.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-modules": "^0.9.1",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

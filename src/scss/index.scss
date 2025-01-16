@@ -1,0 +1,213 @@
+html {
+  // This is the base size from which all rem scales are calculated.
+  font-size: 18px;
+}
+
+body {
+  font-family: Arial;
+  background-color: #000000;
+  color: lime;
+  user-select: none;
+}
+
+a:link {
+  color: #22ccee;
+}
+
+a:visited {
+  color: #667788;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.CenteredColumn {
+  @extend .Column;
+  align-items: center;
+}
+
+.MainScreen-Root {
+  @extend .Column;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  width: 824px;
+  height: 96%;
+  margin: auto;
+  transform: translateX(-50%);
+}
+
+.MainScreen-Header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.MainScreen-Header-Bookend {
+  position: relative;
+}
+
+.MainScreen-Header-Name {
+  position: relative;
+  color: #d6ce15;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.MainScreen-Header-Tagline {
+  position: relative;
+  margin-top: 12px;
+  color: #53c00f;
+  font-size: 1rem;
+}
+
+.MainScreen-Header-PhoneNumber {
+  position: relative;
+  margin-top: 18px;
+  color: #53c00f;
+  font-size: 1rem;
+}
+
+.MainScreen-Header-Email {
+  position: relative;
+  font-size: 1rem;
+}
+
+.MainScreen-Header-GitLink {
+  position: relative;
+  margin-top: 18px;
+  font-size: 1rem;
+}
+
+.TabNavigator-Root {
+  @extend .Column;
+  position: relative;
+  margin-top: 36px;
+  flex-grow: 1;
+}
+
+.TabNavigator-Tabs {
+  @extend .Row;
+  position: relative;
+  padding-left: 6px;
+}
+
+.TabNavigator-Tab {
+  position: relative;
+  color: #d6ce15;
+  background-color: #181e04;
+  border: 1px solid #2f560a;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+  margin: 3px 3px 0 3px;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 40px;
+
+  &:hover {
+    background-color: #2f560a;
+  }
+
+  &.selected {
+    width: 136px;
+    height: 43px;
+    background-color: #2f560a;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+}
+
+.TabNavigator-TabContainer {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  border: 1px solid #2f560a;
+  border-radius: 6px;
+  background-color: #181e04;
+}
+
+.TabNavigator-Scroller {
+  @extend .Column;
+
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 2px;
+  bottom: 12px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: black;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: #2f560a;
+    border: 1px solid #3f671b;
+  }
+}
+
+.TabContent-Entry {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #53c00f;
+  font-size: 16px;
+}
+
+.TabContent-EntryHeader {
+  margin: 16px;
+  text-align: center;
+  color: #d6ce15;
+  font-size: 32px;
+}
+
+.TabContent-LeftImage {
+  float: left;
+  margin-right: 12px;
+}
+
+.TabContent-RightImage {
+  float: right;
+  margin-left: 12px;
+}
+
+.TabContent-ColorGrid {
+  width: 216px;
+}
+
+.TabContent-ColorTile {
+  border: 1px solid #333333;
+  padding-top: 4px;
+  width: 25px;
+  height: 21px;
+  text-align: center;
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
