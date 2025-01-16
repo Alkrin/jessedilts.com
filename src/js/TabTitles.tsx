@@ -28,7 +28,7 @@ export class TabTitles extends React.Component {
           the entire UI for maintainability and reusability, with an eye toward eventual modding support.
         </div>
         <div className={Entry}>
-          <div className={EntryHeader}>{"Final Stand: Ragnarök"}</div>
+          <div className={EntryHeader}>Final Stand: Ragnarök</div>
           <img className={LeftImage} src="images/FinalStandRagnarok.jpg" />
           Released 28. Oct 2021!
           <br />
