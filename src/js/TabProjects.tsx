@@ -12,6 +12,25 @@ export class TabProjects extends React.Component {
     return (
       <>
         <div className={Entry}>
+          <div className={EntryHeader}>{"The Emporium"}</div>
+          <img className={LeftImage} src="images/Emporium.png" />
+          One of my hobbies is Dungeons and Dragons (and other TTRPGs). In one of my game groups, I decided that I
+          wanted to be the person who RUNS the adventurer's guild. The challenge being that an adventurer's guild has a
+          LOT of employees, and keeping track of them all was a nightmare.
+          <br />
+          <br />I tried using an Excel spreadsheet, but at around 30 employees it got too clunky, so I started building
+          a website to do all of the bookkeeping for me. That includes things like character sheets, maps, armies, and
+          keeping track of who is in which dungeon. I even wrote code to manage payroll, contracts, and structures!
+          <br />
+          <br />
+          I'm now using this website to manage over 100 characters!
+          <br />
+          <br />
+          <a href="https://emporium-ashen.vercel.app/" target="_blank" rel="noopener noreferrer">
+            {"Try It Here!"}
+          </a>
+        </div>
+        <div className={Entry}>
           <div className={EntryHeader}>{"Just Another Prophecy"}</div>
           <img className={LeftImage} src="images/JustAnotherProphecy.png" />
           Just Another Prophecy is a 15 minute demo built in RPG Maker. I wrote an entire notebook full of game story
